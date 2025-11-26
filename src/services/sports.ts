@@ -13,7 +13,7 @@ import { MatchResult } from "../types/sports/results";
 import { CacheService } from "./cache";
 
 const api = axios.create({
-  baseURL: "http://100.30.62.142",
+  baseURL: process.env.SPORTS_GAME_PROVIDER_BASE_URL || "http://100.30.62.142",
   timeout: 10000,
 });
 
